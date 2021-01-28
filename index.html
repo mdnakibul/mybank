@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account </title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="display-flex">
+        <div class="width-50">
+            <div class="logo display-flex height-100 flex-align-center">
+                <h3 class="text-white">XYZ Bank Limited</h3>
+            </div>
+        </div>
+        <div class="width-50 display-flex justify-end">
+            <div class="profile flex-align-center">
+                <img src="./assets/images/seller.svg" alt="Your Profile Picture">
+                <h3 class="text-white">Your Name </h3>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="title">
+            <h2 class="text-white"  id="main-title">Welcome to XYZ Bank</h2>
+        </div>
+        <div id="login-area">
+            <form id="login">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter Your Password">
+                <button type="button" id="loginBtn">Login</button>
+            </form>
+            
+        </div>
+        <div id="transaction-area">
+            <div class="account-details display-flex flex-align-center">
+                <div class="deposit display-flex flex-align-center flex-justify-center text-white">
+                    <h3>Deposit </h3>
+                    <h3>$ <span id="showDeposit">0</span></h3>
+                </div>
+                <div class="withdraw display-flex flex-align-center flex-justify-center text-white">
+                    <h3>Withdraw </h3>
+                    <h3>$ <span id="showWithdraw">0</span></h3>
+                </div>
+                <div class="balance display-flex flex-align-center flex-justify-center text-white">
+                    <h3>Balance </h3>
+                    <h3>$ <span id="showBalance">1240</span></h3>
+                </div>
+            </div>
+            <div class="account-box display-flex">
+                <div class="width-50 display-flex flex-justify-center">
+                    <div class="withdraw-box">
+                        <h3>Withdraw</h3>
+                        <input type="number" id="withdrawAmount" placeholder="Write Your Withdraw Amount ($)">
+                        <button id="withdrawBtn">Withdraw</button>
+                    </div>
+                </div>
+                <div class="width-50 display-flex flex-justify-center">
+                    <div class="deposit-box">
+                        <h3>Deposit</h3>
+                        <input type="number" name="depositAmount" id="depositAmount" placeholder="Write Your Deposit Amount ($)">
+                        <button id="depositBtn">Deposit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
